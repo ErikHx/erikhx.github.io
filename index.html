@@ -12,7 +12,7 @@
 
     <style>
         :root {
-            --bg-color: #050a14;      /* Deep blueprint blue */
+            --bg-color: #050a14;       /* Deep blueprint blue */
             --grid-line: rgba(64, 224, 208, 0.08); 
             --primary: #40e0d0;       /* Bright Cyan/Turquoise */
             --text-main: #e0f7fa;     /* Off-white cyan */
@@ -162,6 +162,16 @@
             font-size: 0.7rem; 
             color: var(--text-dim);
             line-height: 1.8;
+        }
+
+        /* FIX: Resizes image to fit the 250px sidebar column */
+        .sys-status img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+            opacity: 0.9;
+            image-rendering: pixelated; /* Keeps pixel art crisp */
         }
 
         /* --- MAIN CONTENT --- */
@@ -446,7 +456,8 @@
             </div>
 
             <div class="sys-status">
-                <img src="Running-Pikachu.gif" alt="pikachu running">
+                <!-- Swapped to a public URL for preview purposes -->
+                <img src="https://media.tenor.com/fSsxHc06fO0AAAAi/pikachu-running.gif" alt="pikachu running">
             </div>
         </header>
 
